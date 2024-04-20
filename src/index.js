@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const faker = require("faker");
+const faker = require("@faker-js/faker");
 app.use(express.json());
 
 const randomUserData = {
