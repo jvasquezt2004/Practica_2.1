@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const faker = require("faker");
-
 app.use(express.json());
 
 const randomUserData = {
@@ -31,9 +30,7 @@ app.get("/login", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  res
-    .status(200)
-    .json({ usuario: "user", sessionId: Math.floor(Math.random() * 100) });
+  res.status(200).json(randomUserData);
 });
 
 const PORT = 8000;
